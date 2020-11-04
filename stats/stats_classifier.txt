@@ -1,0 +1,131 @@
+/usr/local/bin/python3.7 /Users/shantanughosh/Desktop/Shantanu_MS/Fall_20/CIS6930/Project_1/Machine-Learning-TicTac-Toe/classifier_final.py
+--> Final move dataset: <--
+.. Data Loading ..
+ps_np_X: (958, 9)
+ps_np_Y: (958,)
+np_X_train: (766, 9)
+np_Y_train: (766,)
+np_X_test: (192, 9)
+np_Y_test: (192,)
+------------------------------------------------------------
+1. Model: KNN
+Knn classifier
+optimal:1
+Accuracy Knn: 1.0
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+------------------------------------------------------------
+2. Model: SVM
+Fitting 10 folds for each of 6 candidates, totalling 60 fits
+[Parallel(n_jobs=-1)]: Done  60 out of  60 | elapsed:    0.2s finished
+The best test score is 0.9817232375979112 corresponding to hyperparameters {'C': 10, 'gamma': 1}
+Accuracy linear SVM: 0.9895833333333334
+------------------------------------------------------------
+3. Model: MLP
+Best parameters set found on development set:
+{'activation': 'relu', 'hidden_layer_sizes': (120, 120)}
+The best test score is 0.9882506527415144 corresponding to hyperparameters {'activation': 'relu', 'hidden_layer_sizes': (120, 120)}
+Accuracy linear MLP: 0.9947916666666666
+------------------------------------------------------------
+################################################################################
+------------------------------------------------------------
+--> Single class classification move dataset: <--
+.. Data Loading ..
+ps_np_X: (6551, 9)
+ps_np_Y: (6551,)
+np_X_train: (5240, 9)
+np_Y_train: (5240,)
+np_X_test: (1311, 9)
+np_Y_test: (1311,)
+------------------------------------------------------------
+1. Model: KNN
+Knn classifier
+optimal:1
+Accuracy Knn: 0.8466819221967964
+------------------------------------------------------------
+2. Model: SVM
+Fitting 10 folds for each of 6 candidates, totalling 60 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed:   11.1s
+[Parallel(n_jobs=-1)]: Done  60 out of  60 | elapsed:   20.0s finished
+The best test score is 0.34408396946564884 corresponding to hyperparameters {'C': 10, 'gamma': 1}
+Accuracy linear SVM: 0.3188405797101449
+------------------------------------------------------------
+3. Model: MLP
+Best parameters set found on development set:
+{'activation': 'relu', 'hidden_layer_sizes': (200, 200)}
+The best test score is 0.9360687022900763 corresponding to hyperparameters {'activation': 'relu', 'hidden_layer_sizes': (200, 200)}
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (100) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+Accuracy linear MLP: 0.9382151029748284
+------------------------------------------------------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+------------------------------------------------------------
+--> 0.10 Fraction - Final move dataset: <--
+.. Data Loading ..
+(96, 10)
+ps_np_X: (96, 9)
+ps_np_Y: (96,)
+np_X_train: (76, 9)
+np_Y_train: (76,)
+np_X_test: (20, 9)
+np_Y_test: (20,)
+------------------------------------------------------------
+1. Model: KNN
+Knn classifier
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/model_selection/_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+optimal:1
+Accuracy Knn: 0.85
+------------------------------------------------------------
+2. Model: SVM
+Fitting 10 folds for each of 6 candidates, totalling 60 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+The best test score is 1.0 corresponding to hyperparameters {'C': 10, 'gamma': 1}
+[Parallel(n_jobs=-1)]: Done  60 out of  60 | elapsed:    0.1s finished
+Accuracy linear SVM: 1.0
+------------------------------------------------------------
+3. Model: MLP
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/model_selection/_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+Best parameters set found on development set:
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (100) reached and the optimization hasn't converged yet.
+{'activation': 'relu', 'hidden_layer_sizes': (200, 200)}
+The best test score is 0.881578947368421 corresponding to hyperparameters {'activation': 'relu', 'hidden_layer_sizes': (200, 200)}
+Accuracy linear MLP: 1.0
+################################################################################
+  % self.max_iter, ConvergenceWarning)
+--> 0.10 Fraction - Single class classification move dataset: <--
+.. Data Loading ..
+(655, 10)
+ps_np_X: (655, 9)
+ps_np_Y: (655,)
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/model_selection/_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  60 out of  60 | elapsed:    0.5s finished
+np_X_train: (524, 9)
+np_Y_train: (524,)
+np_X_test: (131, 9)
+np_Y_test: (131,)
+------------------------------------------------------------
+1. Model: KNN
+Knn classifier
+optimal:5
+Accuracy Knn: 0.6030534351145038
+------------------------------------------------------------
+2. Model: SVM
+Fitting 10 folds for each of 6 candidates, totalling 60 fits
+The best test score is 0.4064885496183206 corresponding to hyperparameters {'C': 12, 'gamma': 1}
+Accuracy linear SVM: 0.5419847328244275
+------------------------------------------------------------
+3. Model: MLP
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/model_selection/_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+Best parameters set found on development set:
+  DeprecationWarning)
+{'activation': 'relu', 'hidden_layer_sizes': (150, 150)}
+The best test score is 0.7099236641221374 corresponding to hyperparameters {'activation': 'relu', 'hidden_layer_sizes': (150, 150)}
+Accuracy linear MLP: 0.7404580152671756
+/Users/shantanughosh/Library/Python/3.7/lib/python/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (100) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+
+Process finished with exit code 0
